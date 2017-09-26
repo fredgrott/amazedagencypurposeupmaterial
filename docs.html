@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<!-- Amazed Agency Purpose
+     Fred Grott
+     http://weww.uplabs.com/fred.grott
+-->
+<html lang="en">
+  <!-- Some of the head stuff is specific to the Materialize CSS Framework, see
+       http://materializecss.com for details-->
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0 shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="msapplication-tap-highlight" content="no">
+    <!-- No search engine uses keywords anymore so it helps to create a description and to
+         pay attention to the body content copy word choices, tone, etc.-->
+    <meta name="description" content="Amazed Agency Purpose is fully loaded with all the features of a multipurpose site including portoflios, products, services, etc.">
+
+    <title>Docs:Intro</title>
+
+    <!-- Example Favicons for Android, iOS, MS-mobile, Desktop
+         Obviously, replace with your own
+    -->
+    <link rel="icon" sizes="192x192" href="assets/images/favicons/fg-favicon-192x192.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/images/favicons/fg-favicon-144x144.png">
+    <link rel="shortcut icon" href="assets/images/favicons/fg-favicon-72x72.png">
+    <link rel="apple-touch-icon"  href="assets/images/favicons/fg-favicon-72x72.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicons/fg-favicon-72x72.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicons/fg-favicon-144x144.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/fg-favicon-180x180.png">
+
+    <!-- CSS, CSS framework first than fonts than custom
+         CDN Urls to load this via the cloud are in the docs
+     -->
+    <link href="assets/css/fonts.css" type="text/css" rel="stylesheet">
+    <link href="assets/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="assets/css/material-icons.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/style.css" type="text/css" rel="stylesheet">
+    <link href="assets/css/custom.css" type="text/css" rel="stylesheet">
+
+    <!-- I include letteringjs as its a nice utility class when
+         we need to do fancy kerning and other text effects.
+
+         To prevent fout I put everything in the head
+    -->
+    <script src="assets/js/jquery-3.2.1.js"></script>
+    <script src="assets/js/materialize.js"></script>
+    <script src="assets/js/jquery.lettering.js"></script>
+    <!-- Specific jquery plugins to a page go here-->
+    <script src="assets/js/masonry.pkgd.min.js"></script>
+    <script src="assets/js/init.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+
+
+    <!-- Facebook, Twitter, and few other popular social platforms
+         require Schema.org, Open Graph, or other markup so that
+         when sharing the url the correct images and site url
+         get posted right during the share -->
+
+    <!-- Schema.org markup goes here -->
+
+    <!-- Open Graph markup goes here -->
+
+    <!-- Twitter Card markup goes here -->
+  </head>
+  <body>
+    <!-- Header containing the navigation -->
+    <header class="site-header">
+      <!-- our navigation -->
+      <div class="navbar-fixed z-depth-5">
+        <nav class="nav-extended">
+            <!-- Navigation Menu Alignment Tricks:
+                   See what default MaterialCSS behviior is being used first for the
+                   hamburger mobile menu button and brand logo
+
+                   Than adjust the other elements of the nav row using that
+                   default behavior knowledge
+
+                   Most of the time a UL list of links will by default left align
+             -->
+            <div class="nav-wrapper">
+              <!-- Normal MaterializeCSS brand-logo behavior is to align left on desktop
+                   and align center on mobile
+              -->
+              <a href="#" class="brand-logo"><img src="assets/images/amazedlogo.png"></a>
+              <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons black-text">menu</i></a>
+              <ul class="phone-me hide-on-med-and-down">
+                <li><b><i class="fa fa-phone"></i>&nbsp;&nbsp;1-877-333-3333</b></li>
+                <li>&nbsp;&nbsp;<i class="fa fa-map-marker"></i>&nbsp;&nbsp;47 West St, Westville, IN USA</li>
+                <li>&nbsp;&nbsp;<b><i class="fa fa-hourglass-o"></i>&nbsp;&nbsp;9am-5pm CST(-6.00 GST)</b></li>
+              </ul>
+            </div>
+            <!-- MaterializeCSS Docs are slightly wrong, tabs go outside the nav-wrapper-->
+            <div class="nav-content">
+              <ul class="tabs tabs-transparent tab-me hide-on-med-and-down">
+                  <li class="tab tab-it"><a  class="active" href="">Docs:</a></li>
+                  <li class="tab"><a target="_self" class="active" href="docs.html">Intro</a></li>
+                  <li class="tab"><a target="_self" class="" href="docs-cdns.html">CDNs</a></li>
+                  <li class="tab"><a target="_self" class="" href="docs-credits.html">Credits</a></li>
+                  <li class="tab"><a target="_self" class="" href="docs-css.html">CSS</a></li>
+                  <li class="tab"><a target="_self" class="" href="docs-design.html">Design</a></li>
+                  <li class="tab"><a target="_self" class="" href="docs-resources.html">Resources</a></li>
+              </ul>
+            </div>
+        </nav>
+      </div>
+      <!-- Mobile Sidenav defintion,
+           the id name needs to match the data-activates name in our button-collapse menu button-->
+      <ul class="side-nav mobile-site-menu" id="mobile-demo">
+        <!-- Since the Braqnd Logo is centered in mobile we have no
+             need to repeat the Brand Logo in the mobile side nav out
+
+             The accordion option is used as we want an indicator of
+             where at in the site while still allowing viewer to choose
+             a new section of the site to vist. Otherwise one would use the
+             expandable collapsible option.
+
+        -->
+        <li class="no-padding">
+          <ul class="collapsible collapsible-accordion">
+            <li>
+              <a class="collapsible-header">About<i class="material-icons">arrow_drop_down</i></a>
+              <div class="collapsible-body">
+                <ul>
+                  <li><a href="about-stories.html">Stories</a></li>
+                  <li>
+                    <ul class="collapsible collapsible-accordion">
+                      <li>
+                             <a class="collapsible-header">Careers<i class="material-icons">arrow_drop_down</i></a>
+                             <div class="collapsible-body">
+                             <ul>
+                               <li><a href="careers-passion.html">Intro</a></li>
+                               <li><a href="careers-openings.html">Jobs</a></li>
+                             </ul>
+                             </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li><a href="about-customers.html">Customers</a></li>
+                  <li><a href="about-newsletter.html">Newsletter</a></li>
+                  <li><a href="about-team.html">Team</a></li>
+                  <li><a href="about-privacy.html">Privacy</a></li>
+                  <li><a href="about-termsofservice.html">TOS</a></li>
+
+                </ul>
+              </div>
+             </li>
+             <li>
+               <a class="collapsible-header">Services<i class="material-icons">arrow_drop_down</i></a>
+               <div class="collapsible-body">
+                 <ul>
+                   <li><a href="services-start.html">Intro</a></li>
+                   <li><a href="services-economy.html">Economy</a></li>
+                   <li><a href="services-midlevel.html">MidLevel</a></li>
+                   <li><a href="services-premium.html">Premium</a></li>
+                 </ul>
+               </div>
+             </li>
+             <li>
+               <a class="collapsible-header">Successes<i class="material-icons">arrow_drop_down</i></a>
+               <div class="collapsible-body">
+                 <ul>
+                   <li><a href="successes-showcase.html">Showcase</a></li>
+                   <li><a href="successes-awards.html">Awards</a></li>
+                 </ul>
+               </div>
+             </li>
+             <li>
+               <a class="collapsible-header">Blog<i class="material-icons">arrow_drop_down</i></a>
+               <div class="collapsible-body">
+                 <ul>
+                   <li><a href="blog-blog.html">Blog</a></li>
+                   <li><a href="blog-recent.html">Recent</a></li>
+                   <li><a href="blog-news.html">News</a></li>
+                   <li><a href="blog-branding.html">Branding</a></li>
+                   <li><a href="blog-ux.html">UX</a></li>
+                 </ul>
+               </div>
+             </li>
+             <li>
+               <a class="collapsible-header">Contact<i class="material-icons">arrow_drop_down</i></a>
+               <div class="collapsible-body">
+                 <ul>
+                   <li><a href="contact-needs.html">Intro</a></li>
+                   <li><a href="contact-branding.html">Branding</a></li>
+                   <li><a href="contact-design.html">Design</a></li>
+                   <li><a href="contact-socialmedia.html">SocialMedia</a></li>
+                 </ul>
+               </div>
+             </li>
+             <li>
+               <a class="collapsible-header">MeetUs<i class="material-icons">arrow_drop_down</i></a>
+               <div class="collapsible-body">
+                 <ul>
+                   <li><a href="meetus-locally.html">MeetUps</a></li>
+                   <li><a href="meetus-speaking.html">Speaking</a></li>
+                 </ul>
+               </div>
+             </li>
+             <li>
+               <a class="collapsible-header active">Docs<i class="material-icons">arrow_drop_down</i></a>
+               <div class="collapsible-body">
+                 <ul>
+                   <li class="active"><a href="docs.html">Intro</a></li>
+                   <li class=""><a href="docs-cdns.html">CDNs</a></li>
+                   <li class=""><a href="docs-credits.html">Credits</a></li>
+                   <li class=""><a href="docs-css.html">CSS</a></li>
+                   <li class=""><a href="docs-design.html">Design</a></li>
+                   <li class=""><a href="docs-resources.html">Resources</a></li>
+                 </ul>
+               </div>
+             </li>
+            </ul>
+          </li>
+
+      </ul>
+
+    </header>
+    <!-- Start of Main Content -->
+    <main>
+      <!-- Index Parallax Header -->
+      <div class="parallax-container non-index-parallax">
+        <div class="parallax"><img class="responsive-img" src="assets/images/parallax/creative-smartphone-notebook-typography-800x600.png"></div>
+        <!-- to handle the fixed navbar offset to content-->
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+
+        <div class="card-image-banner center">
+          <h4 ><span class="top-banner">Docs:Intro</span></h4>
+
+        </div>
+      </div>
+      <div class="container section">
+        <div class="row">
+          <div class="col l6 m6 s12">
+                <div class="card-panel">
+                  <div class="card-content">
+                    <h5 class="card-header">
+                      Basic SetUp
+                    </h5>
+                    <p>
+                      This web template is self contained with all the icons, images, fonts, css,
+                      and js to get started with your web project straight-away. You will start
+                      by replacing favicons, images and content with your own.
+                    </p>
+                    <br/>
+                    <p>
+                      As you change from the flat-file structure of the web template you will go about
+                      changing the menu url hrefs. An easy way to do that is start with the sitemap and
+                      pages fiels as they list most of the pages so you can use them affter you modify them
+                      to flight check if you go the modified url hrefs right, etc.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col l6 m6 s12">
+                <div class="card-panel">
+                  <div class="card-content">
+                    <h5 class="card-header">
+                      Advance SetUp
+                    </h5>
+                    <p>
+                       You can change the loading of several CSS, JS, Fonts to loading from the cloud.
+                       The specific ursl you can find below to modify the head of each file to
+                       load stuff from the cdn cloud.
+                    </p>
+                  </div>
+                </div>
+              </div>
+        </div>
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer class="page-footer">
+      <div class="container">
+          <div class="row">
+              <div class="col l6 s12">
+                  <h5 class="footer-header">Company</h5>
+                  <p class="">Amazeed is an up-and-coming design agency built to serve start-ups with that perfection of UX-UI polish that gets both attention and customers.</p>
+                  <ul>
+                    <li><a href="about-stories.html">About</a></li>
+                    <li><a href="blog-recent.html">Blog</a></li>
+                    <li><a href="about-careers-passion.html">Careers</a></li>
+                    <li><a href="about-termsofservice.html">TermsOfService</a></li>
+                    <li><a href="about-privacy.html">Privacy</a></li>
+                  </ul>
+              </div>
+             <div class="col l3 s12">
+                    <h5 class="footer-header">Contact</h5>
+                    <p>Amazed, LLC<br/>
+                       Suite 67<br/>
+                       57 West Street<br/>
+                       Westville, IN 46391<br/>
+                       USA
+                    </p>
+                    <ul>
+                      <li>1-877-333-3333</li>
+                      <li><a class="" href="#!">inquiries@amazed.io</a></li>
+
+                    </ul>
+              </div>
+             <div class="col l3 s12">
+               <h5 class="footer-header">Design  Newsletter</h5>
+               <p>Don't worry, we do not spam. See our recent <a href="about-newsletter.html">newsletter sample</a></p>
+               <form class="col s12 newsletter-wrapper">
+                  <div class="row">
+                     <div class="input-field col s9">
+                        <input id="email" type="email" class="validate" placeholder="Email Address" autocomplete="email">
+                     </div>
+                     <div class="input-field col s3">
+                          <button type="submit" class="btn waves-effect waves-light"><i class="fa fa-send"></i></button>
+                       </div>
+                  </div>
+               </form>
+
+
+               <h5 class="footer-header">Connect</h5>
+
+                 <a class="" href="#!" target="_blank"><i class="fa fa-twitter"></i></a>
+                 <a class="" href="#!" target="_blank"><i class="fa fa-facebook"></i></a>
+                 <a class="" href="#!" target="_blank"><i class="fa fa-google-plus"></i></a>
+                 <a class="" href="#!" target="_blank"><i class="fa fa-linkedin"></i></a>
+                 <a class="" href="#!" target="_blank"><i class="fa fa-medium"></i></a>
+             </div>
+         </div>
+      </div>
+    <!-- Material Design trick of using a RGBA to tone it, see the style.css file-->
+    <div class="footer-copyright">
+      <div class="container">
+      &copy;2017 Fred Grott, all rights reserved. Made with design-love, front-end craftmanship and <a class="" href="http://materializecss.com">Materialize</a>.
+      </div>
+    </div>
+    </footer>
+  </body>
+
+</html>
